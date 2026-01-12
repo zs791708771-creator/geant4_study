@@ -1,0 +1,16 @@
+# display applied commands on screen
+/control/verbose 
+
+
+/geometry/source test1.tg
+/run/initialize
+
+/geometry/test/run
+/vis/geometry/list
+
+
+/vis/open
+/vis/drawVolume 
+/vis/drawTree
+/vis/viewer/set/style surface
+

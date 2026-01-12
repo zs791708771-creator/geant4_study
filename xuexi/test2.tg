@@ -1,0 +1,27 @@
+:volu world BOX 10*m 10*m 10*m G4_Galactic
+:vis world OFF
+
+
+:volu tb TUBE 0 100 100 G4_Si
+:color tb 0 0 100
+
+
+:volu lg1 BOX 19.5 13.25 40 G4_Si
+:volu lg2 BOX 19.5 13.25 40 G4_Si
+:volu lg3 BOX 19.5 13.25 40 G4_Si
+:volu lg4 BOX 19.5 13.25 40 G4_Si
+
+:rotm r000 0 0 0
+:rotm r001 16 0 0
+:rotm r002 -16 0 0
+:rotm r003 0 16 0
+:rotm r004 0 -16 0
+
+:place tb 1 world r000 0 0 0
+:place lg1 2 world r001 50 0 -50
+:place lg2 2 world r002 -50 0 -50
+:place lg3 2 world r003 0 50 -50
+:place lg4 2 world r004 0 -50 -50
+
+
+
