@@ -4,161 +4,182 @@
 :volu Cap POLYCONE
 0 360       // phi0, dphi in degrees
 6          // number of z planes
--100 0 60     // z1, r1inner, r1outer
--97.5 0 60
--97.5 57.15 60
-12.5 57.15 60 
-15.55 57.15 65.15
-17.55 57.15 65.15
+-100   0 57.65     // z1, r1inner, r1outer
+-97.46 0 57.65
+-97.46 57.15 57.65
+11.247 57.15 57.65 
+15.748 57.15 65.151
+17.78  57.15 65.151
 G4_Cu       // material
 
-:volu Oring TUBE 57.15 65.15 0.825 G4_Si
+:volu Oring POLYCONE
+0 360       // phi0, dphi in degrees
+2          // number of z planes
+17.78  57.15 65.151
+19.431 57.15 65.151
+G4_Si       // material
 :color Oring 0 100 0
 
-:volu irsh POLYCONE
+:volu Chamber POLYCONE
 0 360       // phi0, dphi in degrees
 8          // number of z planes
-19.2 57.15 65.15     // z1, r1inner, r1outer
-21.2 57.15 65.15
-24.25 57.15 60
-207.13 57.15 60 
-207.13 57.15 88.9
-214.75 57.15 88.9
-214.75 69.85 88.9
-243.325 69.85 88.9
+19.431  57.15 65.151     // z1, r1inner, r1outer
+21.463  57.15 65.151
+24.511  57.15 60.071
+207.391 57.15 60.071 
+207.391 57.15 88.9
+215.011 57.15 88.9
+215.011 69.85 88.9
+243.586 69.85 88.9
 G4_Cu       // material
 
-:volu irshcap POLYCONE
+:volu Ring POLYCONE
+0 360
+6
+8.246 57.65 59.65
+11.247 57.65 59.65
+15.748 65.151 67.151
+21.463 65.151 67.151
+24.511 60.071 62.071
+27.511 60.071 62.071
+G4_Si       // material
+:color Ring 0 10 110
+
+:volu Cap_30K POLYCONE
 0 360       // phi0, dphi in degrees
 6          // number of z planes
--87.3 0 43.45    // z1, r1inner, r1outer
--84.8 0 43.45
--84.8 40.9 43.45
-8.34 40.9 43.45
-8.34 40.9 51.05
-10.86 40.9 51.05
+-87.3  0 41.4065     // z1, r1inner, r1outer
+-84.76 0 41.4065
+-84.76 40.9065 41.4065
+8.382  40.9065 41.4065 
+8.382  40.9065 51.054
+12.922 40.9065 51.054
 G4_Cu       // material
 
-:volu dstage POLYCONE
-0 360       // phi0, dphi in degrees
-4          // number of z planes
--74.6 0 33.65    // z1, r1inner, r1outer
--71.425 0 33.65
--71.425 0 30.86
--65.075 0 30.86
-G4_Si       // material
-:color dstage 0 0 100
-
-:volu 4kirs POLYCONE
-0 360       // phi0, dphi in degrees
-4          // number of z planes
--71.425 31.115 33.655
-27.635 31.115 33.655
-27.635 31.115 42.926
-30.175 31.115 42.926
-G4_Si       // material
-:color dstage 0 10 100
-
-:volu 45kirs POLYCONE
+:volu Chamber_30K POLYCONE
 0 360       // phi0, dphi in degrees
 6          // number of z planes
-10.922 42.22 51.054
-13.97 42.22 51.054
-13.97 49.53 51.054
-218.186 49.53 51.054
-218.186 49.53 60.325
-221.234 49.53 60.325
+12.922  42.2775 51.054    // z1, r1inner, r1outer
+15.97   42.2775 51.054
+15.97   49.53 51.054
+217.138 49.53 51.054
+217.138 49.53 60.325
+220.186 49.53 60.325
 G4_Cu       // material
 
-:volu 45kstg POLYCONE
+:volu flange1 POLYCONE
 0 360       // phi0, dphi in degrees
-2          // number of z planes
-221.234 0 60.325
-233.223 0 60.325
-G4_Si       // material
-:color 45kstg 0 10 100
+2           // number of z planes
+39.395  0 15.05  // z1, r1inner, r1outer
+243.586 0 15.05
+G4_Cu       // material
 
-:volu rtf1 POLYCONE
+:volu flange2 POLYCONE
 0 360       // phi0, dphi in degrees
-2          // number of z planes
-246.634 0 88.9
-272.034 0 88.9
-G4_Si       // material
-:volu rtf2 TUBE 0 10.95 102.95 G4_Si
-:volu rtf3 TUBE 0 15.91 102.95 G4_Si
+2           // number of z planes
+39.395  0 9.6  // z1, r1inner, r1outer
+243.586 0 9.6
+G4_Cu       // material
 
-:volu 4kstg1 POLYCONE
+:volu flange3 POLYCONE
 0 360       // phi0, dphi in degrees
-2          // number of z planes
+2           // number of z planes
+243.586 0 88.9
+268.986 0 88.9
+G4_Cu       // material
+
+:volu Stage2k_1 POLYCONE
+0 360       // phi0, dphi in degrees
+2           // number of z planes
 30.175 0 42.926
-39.295 0 42.926
+39.395 0 42.926
 G4_Si       // material
-:color dstage 0 10 100
-:volu 4kstg2 TUBE 10.95 12.45 7.5 G4_Si
-:volu 4kstg3 TUBE 15.91 17.41 7.5 G4_Si
+:color Stage2k_1 0 0 100
 
-:volu indiumbot POLYCONE
+:volu Stage2k_2 POLYCONE
 0 360       // phi0, dphi in degrees
-2          // number of z planes
--65.075 0 37.43
--64.975 0 37.43
-G4_Cu       // material
-
-:volu bnpt POLYCONE
-0 360       // phi0, dphi in degrees
-2          // number of z planes
--64.975 0 37.43
--61.575 0 37.43
-G4_Cu       // material
-
-:volu indiummid POLYCONE
-0 360       // phi0, dphi in degrees
-2          // number of z planes
--61.575 0 24
--61.475 0 24
-G4_Cu       // material
-
-:volu copp POLYCONE
-0 360       // phi0, dphi in degrees
-2          // number of z planes
--61.475 0 24
--61.375 0 24
+2           // number of z planes
+39.395 9.6 12.4995
+54.395 9.6 12.4995
 G4_Si       // material
+:color Stage2k_2 0 0 100
 
-:volu indiumtop POLYCONE
+:volu Stage2k_3 POLYCONE
 0 360       // phi0, dphi in degrees
-2          // number of z planes
--61.375 0 24
--61.275 0 24
+2           // number of z planes
+39.395 15.05 17.411
+54.395 15.05 17.411
+G4_Si       // material
+:color Stage2k_3 0 0 100
+
+:volu Temp_sensor POLYCONE
+0 360       // phi0, dphi in degrees
+2           // number of z planes
+39.395 0 5
+42.395 0 5
+G4_Si       // material
+:color Temp_sensor 0 10 100
+
+:volu heater BOX 11.751 4.422 1.5 G4_Si
+:color heater 0 10 100
+
+:volu cybase BOX 14.3 14.3 15 G4_Cu
+:volu cy BOX 12.7 12.7 15 G4_Si
+:color cy 0 10 100
+
+:volu ircap POLYCONE
+0 360       // phi0, dphi in degrees
+6          // number of z planes
+-68.26   0 27.041     // z1, r1inner, r1outer
+-67.76   0 27.041
+-67.76   26.541 27.041
+10.89    26.541 27.041 
+10.89    26.541 33.041
+13.43    26.541 33.041
 G4_Cu       // material
 
-:volu rod1 TUBE 0 1.397 42.86 G4_Cu
-:volu rod2 TUBE 0 1.397 42.86 G4_Cu
+:volu irbase POLYCONE
+0 360       // phi0, dphi in degrees
+4          // number of z planes
+13.43    26.541 33.041
+29.635   26.541 33.041
+29.635   26.541 47.926
+32.175   26.541 47.926  
+G4_Cu       // material
+
+:volu lg1 BOX 19.5 13.25 160 G4_Cu
+:volu lg2 BOX 19.5 13.25 160 G4_Cu
+:volu lg3 BOX 13.25 19.5 160 G4_Cu
+:volu lg4 BOX 13.25 19.5 160 G4_Cu
 
 :rotm r000 0 0 0
-:place Cap 1 world r000 0 0 0
-:place Oring 2 world r000 0 0 18.375
-:place irsh 3 world r000 0 0 0
-:place irshcap 4 world r000 0 0 0
-:place dstage 5 world r000 0 0 0
-:place 4kirs  6 world r000 0 0 0
-:place 45kirs  7 world r000 0 0 0
-:place 45kstg 8 world r000 0 0 0
-:place rtf1  9 world r000 0 0 0
-:place rtf2  9 world r000 -14.7 22.1 143.684
-:place rtf3  9 world r000 25 0 143.684
-:place 4kstg1  10 world r000 0 0 0
-:place 4kstg2 10 world r000 -14.7 22.1 46.795
-:place 4kstg3  10 world r000 25 0 46.795
-:place indiumbot 11 world r000 0 0 0
-:place bnpt 12 world r000 0 0 0
-:place indiummid 13 world r000 0 0 0
-:place copp 14 world r000 0 0 0
-:place indiumtop 15 world r000 0 0 0
-:place rod1  16 world r000 27.86 0 -31.74
-:place rod2  16 world r000 -27.86 0 -31.74
+:rotm r001 15 0 0
+:rotm r002 -15 0 0
+:rotm r003 0 15 0
+:rotm r004 0 -15 0
 
+:place Cap          1 world r000 0 0 0
+:place Oring        2 world r000 0 0 0
+:place Chamber      3 world r000 0 0 0
+:place Cap_30K      4 world r000 0 0 0
+:place Chamber_30K  5 world r000 0 0 0
+:place flange1      6 world r000 12.69 -21.06 0
+:place flange2      6 world r000 -25.515 4 0
+:place flange3      6 world r000 0 0 0
+:place Stage2k_1    8 world r000 0 0 0
+:place Stage2k_2    8 world r000 -25.515 4 0
+:place Stage2k_3    8 world r000 12.69 -21.06 0
+:place Temp_sensor  9 world r000 -26.759 -18 0
+:place heater    10 world r000 1 20 42.895
+:place cybase    11 world r000 0 0 17.175
+:place cy        12 world r000 0 0 -12.825
+:place ircap     13 world r000 0 0 0
+:place irbase    14 world r000 0 0 0
 
-
+:place lg1 15 world r003 150 0 50
+:place lg2 15 world r004 -150 0 50
+:place lg3 15 world r002 0 150 50
+:place lg4 15 world r001 0 -150 50
+:place Ring 16 world r000 0 0 0
 
 
